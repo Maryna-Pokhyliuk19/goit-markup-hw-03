@@ -312,8 +312,9 @@ align-items: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
-.our-team-item:not(:last-child) {
-    margin-right: 30px;
+.our-team-item:not(:last-child)
+{
+    margin-right: 30px;}
 
 /*----------Footer-------------------*/
 
@@ -379,7 +380,17 @@ color: rgba(255, 255, 255, 0.6);
 
 /*-------------Porttfolio-----------------*/
 
+.portfolio-list {
+    display: flex;
+    align-items: center;
+
+}
+
+.portfolio-item:not(:last-child) {
+    margin-right: 8px;
+}
 .portfolio-button {
+
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
