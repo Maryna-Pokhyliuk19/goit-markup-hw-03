@@ -76,15 +76,29 @@ h6 {
 }
 
 /*-------------Header-----------------*/
+
+.header-container {
+display: flex;
+align-items: center;
+}
+
+.header-navigation {
+display: flex;
+align-items:center;
+}
+
 .header-list {
     display: flex;
 }
+
 .header-sublist {
+    margin-left: auto;
     display: flex;
+    
 }
-.header-container {
-    display: flex;
-    align-items:center;
+
+.header-link {
+    margin-right: 50px;
 }
 
 .header-mail-link
@@ -98,6 +112,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--header-mail-link-color);
+margin-right: 50px;
 }
 
 .header-mail-link:hover, :focus {
@@ -170,8 +185,8 @@ margin-right: 93px;
 
 /*------------Main-------------------*/
 
-
 .main-section {
+
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--main-content-color);
@@ -186,6 +201,7 @@ margin-right: 93px;
     color: var(--main-title-color);
     max-width: 696px;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 .main-section-button
 {
@@ -193,7 +209,7 @@ margin-right: 93px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
+    display: block;
     text-align: center;
     align-items: center;
     letter-spacing: 0.06em;
@@ -202,12 +218,22 @@ margin-right: 93px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 30px; 
+     
     margin: 0 auto;
+    
 }
 
 /*----------Сильные навыки------------*/
+.hard-skills-container {
+    display: flex;
+    align-items: center;
+    
+}
 
+.hard-skills-list {
+    display: flex;
+    align-items: center;
+}
 .hard-skills {
     margin-top: 94px;
     margin-bottom: 94px;
@@ -228,7 +254,9 @@ margin-right: 93px;
     margin-top: 10px;
     max-width: 270px;
 }
-
+ .hard-skills-item:not(:last-child) {
+     margin-right: 30px;
+ }
 
 /*-----------Activity---------------*/
 .activity {
