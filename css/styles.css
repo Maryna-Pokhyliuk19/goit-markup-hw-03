@@ -388,6 +388,7 @@ color: rgba(255, 255, 255, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .portfolio-item:not(:last-child)
@@ -395,6 +396,14 @@ color: rgba(255, 255, 255, 0.6);
     margin-right: 8px;
 }
 
+.portfolio-main-button {
+   
+}
+
+.portfolio-next-button {
+    
+    
+}
 .portfolio-button {
 
     font-family: inherit;
