@@ -83,9 +83,12 @@ h6 {
 .header-container {
 display: flex;
 align-items: center;
-border-bottom: 1px solid #ECECEC;
+
 }
 
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 .header-navigation {
 display: flex;
 align-items:center;
@@ -209,6 +212,11 @@ margin-right: 93px;
 }
 .main-section-button
 {
+    border-bottom: #2196F3;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -285,6 +293,7 @@ margin-right: 30px;
 display: flex;
 align-items: center;
 }
+
 .our-team-title {
     font-weight: 700;
     font-size: 36px;
@@ -305,7 +314,6 @@ align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--third-title-color);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -315,6 +323,12 @@ align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.our-team-item {
+    border: #ECECEC;
+    background-color: #FFFFFF;
 }
 .our-team-item:not(:last-child)
 {
@@ -322,15 +336,13 @@ align-items: center;
 
 /*----------Footer-------------------*/
 
-.footer-content {
-    background-color: #2F303A;
-}
+
 .footer-logo-link {
     padding-top: 60px;
     
 }
 .footer {
-
+background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -377,6 +389,7 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+margin-bottom: 9px;
 }
 .footer-link-contact:hover, :focus {
     color: var(--accent-color);
@@ -385,6 +398,7 @@ color: rgba(255, 255, 255, 0.6);
 /*-------------Porttfolio-----------------*/
 
 .portfolio-list {
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -396,16 +410,17 @@ color: rgba(255, 255, 255, 0.6);
     margin-right: 8px;
 }
 
-.portfolio-main-button {
-   
-}
 
-.portfolio-next-button {
-    
-    
-}
+
+
 .portfolio-button {
-
+    border-radius: 4px;
+    margin-bottom: 50px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+border: none;
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
@@ -446,16 +461,12 @@ color: rgba(255, 255, 255, 0.6);
 margin-right: 0;
 }
 
-.project-item {
-    margin-top: 34px;
-}
 .project-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--second-title-color);
-    margin-top: 20px;
     margin-bottom: 4px;
 }
 .project-text {
@@ -466,7 +477,11 @@ margin-right: 0;
 }
 
 .project-card {
+    padding-top: 20px;
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
+    border-left: #EEEEEE;
+    border-right: #EEEEEE;
+    border-bottom: #EEEEEE;
 }
