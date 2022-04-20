@@ -16,6 +16,7 @@
     --btn-bacground-color: #2196F3;
     --btn-background-second-color: #F5F4FA;
     --project-gap: 30px;
+    --border-color: #EEEEEE;
 }
 
 body {
@@ -89,11 +90,15 @@ align-items: center;
 .header {
     border-bottom: 1px solid #ECECEC;
 }
+
 .header-navigation {
 display: flex;
 align-items:center;
 }
 
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
 .header-list {
     display: flex;
 }
@@ -104,9 +109,6 @@ align-items:center;
     
 }
 
-.header-link {
-    margin-right: 50px;
-}
 
 .header-mail-link
 {
@@ -120,6 +122,8 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--header-mail-link-color);
 margin-right: 50px;
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
 .header-mail-link:hover, :focus {
@@ -135,6 +139,8 @@ margin-right: 50px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--header-tel-link-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .header-tel-link:hover,
 :focus {
@@ -212,22 +218,20 @@ margin-right: 93px;
 }
 .main-section-button
 {
-    border-bottom: #2196F3;
+    
     width: 200px;
     height: 50px;
-    left: 700px;
-    top: 430px;
+    border: navajowhite;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     display: block;
-    text-align: center;
-    align-items: center;
+    
     letter-spacing: 0.06em;
     color: var(--main-btn-color);
     background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
     border-radius: 4px;
     cursor: pointer;
     margin: 0 auto;
@@ -327,6 +331,10 @@ align-items: center;
 }
 
 .our-team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     border: #ECECEC;
     background-color: #FFFFFF;
 }
@@ -336,13 +344,8 @@ align-items: center;
 
 /*----------Footer-------------------*/
 
-
-.footer-logo-link {
-    padding-top: 60px;
-    
-}
 .footer {
-background-color: #2F303A;
+background-color: var(--main-content-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -357,10 +360,9 @@ background-color: #2F303A;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
-    margin-bottom: 20px;
+    color: var(--accent-color);
     
 }
 .footer-sublogo-link {
@@ -370,7 +372,7 @@ background-color: #2F303A;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--footer-color);
 }
 .footer-link-place {
     font-family: 'Roboto';
@@ -379,7 +381,6 @@ background-color: #2F303A;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--footer-color);
-    margin-bottom: 9px;
 }
 
 .footer-link-contact {
@@ -389,10 +390,14 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
-margin-bottom: 9px;
 }
+
 .footer-link-contact:hover, :focus {
     color: var(--accent-color);
+}
+
+.footer-item:not(:last-child) {
+margin-bottom: 9px;
 }
 
 /*-------------Porttfolio-----------------*/
@@ -415,12 +420,11 @@ margin-bottom: 9px;
 
 .portfolio-button {
     border-radius: 4px;
-    margin-bottom: 50px;
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
-border: none;
+    border: none;
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
@@ -481,7 +485,7 @@ margin-right: 0;
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
-    border-left: #EEEEEE;
-    border-right: #EEEEEE;
-    border-bottom: #EEEEEE;
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
