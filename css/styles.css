@@ -39,11 +39,6 @@ h6 {
     margin: 0;
 }
 
-.img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
 .link
 {
@@ -121,7 +116,6 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--header-mail-link-color);
-margin-right: 50px;
 padding-top: 32px;
 padding-bottom: 32px;
 }
@@ -415,9 +409,6 @@ margin-bottom: 9px;
     margin-right: 8px;
 }
 
-
-
-
 .portfolio-button {
     border-radius: 4px;
     padding-top: 6px;
@@ -458,7 +449,6 @@ margin-bottom: 9px;
     margin-top: var(--project-gap);
     margin-left: var(--project-gap);
     flex-basis: calc(100% / 3 - var(--project-gap));
-    border-bottom: 1px solid #EEEEEE;
 }
 
 .project-item:nth-child(3n) {
@@ -488,4 +478,10 @@ margin-right: 0;
     border-left: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
+}
+
+.project-img {
+display: block;
+    max-width: 100%;
+    height: auto;
 }
